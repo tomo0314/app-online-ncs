@@ -1,0 +1,100 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.headerContent { 
+    list-style: none; 
+}
+
+.flex { 
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.flex nav {
+    margin-left: auto;
+}
+
+.flex .headerTitle { 
+    display: flex;
+    margin-right: 50px;
+}
+
+.flex ul {
+    display: flex;
+    margin-right: 50px;
+}
+
+.flex ul li {
+    margin-left: 20px;
+}
+
+.current-work { 
+    display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+}
+
+header {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 116px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+    margin: 10px 50px;
+}
+
+.title { 
+    width: 451px;
+    height: 41px;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font: normal normal 900 30px/41px Avenir;
+    letter-spacing: 0px;
+    color: #616477;
+}
+
+.container { 
+    margin: 0px 200px;
+}
+
+.current-work {
+    width: 1920px;
+    height: 957px;
+    background: transparent linear-gradient(180deg, #53A7E6 0%, #52A5E3 50%, #2A5473 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.4;
+}
+
+
+/* ------------------------------- */
+
+footer {
+    background: skyblue;
+}
+
+.container { 
+    background: gainsboro 
+}
+
+
+.all-work { 
+    background: tan;
+}
+
+.reccomend { 
+    background: khaki;
+}
+
+.about-ncs { 
+    background: lightyellow;
+}
