@@ -16,16 +16,17 @@
         <link href="{{ asset('css/work_top.css') }}" rel="stylesheet"> 
 
     </head>
+
     <body>
         <div class="wrapper">
             <header class="header flex">
-                <div class="headerTitle">
-                    <img class="logo" src="{{ asset('/images/logo_NCS.png') }}" alt="ロゴ">
-                    <h1 class="title"> Narrative Career School Online </h1>
+                <div class="header__logo">
+                    <img class="header__logo--image" src="{{ asset('/images/logo_NCS.png') }}" alt="ロゴ">
+                    <h1 class="header__logo--title"> Narrative Career School Online </h1>
                 </div>
 
-                <nav>
-                    <ul class="header-nav">
+                <nav class="header-nav">
+                    <ul class="header-list">
                         <li class="headerContent">
                             <a href="">通知<!-- Todo: アイコン入れる --></a>
                         </li>
