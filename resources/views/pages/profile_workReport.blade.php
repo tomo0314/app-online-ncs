@@ -14,9 +14,9 @@
 
         <!-- Styles -->
         <!-- Todo: CSSのパス変更する -->
-        <link href="{{ asset('css/style_top.css') }}" rel="stylesheet"> 
+        <link href="{{ asset('css/profile_workReport.css') }}" rel="stylesheet"> 
     </head>
     <body>
-
+        <div class="red">kodai</div>
     </body>
 </html>

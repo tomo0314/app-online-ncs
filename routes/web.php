@@ -16,9 +16,13 @@ Route::get('/', function () {
 });
 
 Route::get('/sample', function () {
-    return view('pages/sample');
+    return view('sample');
 });
 
 Route::get('/top', function () {
     return view('pages/work_top');
+});
+
+Route::get('/about', function () {
+    return view('pages/profile_workReport');
 });
