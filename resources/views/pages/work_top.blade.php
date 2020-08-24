@@ -155,17 +155,17 @@
                 </main>
             </div>
 
-            <footer>
-                <div class="logo">
-                    <img><!-- Todo:ロゴ画像入れる --></img>
+            <footer class="footer">
+                <div class="footer__logo flex">
+                    <img class="footer__logo--image" src="{{ asset('/images/logo_NCS.png') }}" alt="ロゴ">
                 </div>
 
-                <ul>
-                    <li><a href="">お問い合わせ</li>
-                    <li><a href="">このサイトについて</li>
-                    <li><a href="">利用規約</li>
+                <ul class="footer__list flex">
+                    <li class="footer__list--form"><a href="">お問い合わせ</a></li>
+                    <li class="footer__list--about"><a href="">このサイトについて</a></li>
+                    <li class="footer__list--terms"><a href="">利用規約</a></li>
                 </ul>
-                <p>
+                <p class="footer__copyLight flex">
                     <small>Copyright 2020 Narrative career school</small>
                 </p>
             </footer>

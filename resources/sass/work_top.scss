@@ -22,7 +22,7 @@
 }
 
 
-// flex //
+// flex 
 .flex {
     display: -webkit-flex;
     display: -moz-flex;
@@ -32,7 +32,7 @@
 }
 
 
-// header //
+// header 
 .header {
     width: $header-width;
     height: $header-height;
@@ -95,6 +95,48 @@
     background: transparent linear-gradient(180deg, #aad5f5 0%, #9ccdf3 50%, #3c5261 100%) 0% 0% no-repeat padding-box;
     opacity: 0.4;
 }
+
+
+//footer
+.footer {
+    width: $footer-width;
+    height: $footer-height;
+    background: $footer-background;
+
+    .footer__logo {
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;  
+        
+        .footer__logo--image {
+            margin: 20px auto;
+            width: 34px;
+            height: 34px;
+        }
+    }
+
+    .footer__list {
+        justify-content: center; 
+        align-items: center;  
+        list-style: none;
+
+        li {
+            margin: 0 20px;
+            a {
+                text-decoration: none;
+                color: #333333;
+            }
+        }
+    }
+    
+    .footer__copyLight {
+        flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+        justify-content: center; /* 子要素をflexboxにより中央に配置する */
+        align-items: center;  /* 子要素をflexboxにより中央に配置する */
+        margin: 10px 0;
+        text-decoration: none;
+    }
+} 
 
 
 /* ------------------------------- */
