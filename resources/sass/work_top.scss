@@ -1,5 +1,11 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 
 // Variables
 @import 'variables';
@@ -15,38 +21,18 @@
     padding: 0;
 }
 
+
+// flex //
+.flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+
 // header //
-.flex { 
-    display: flex;
-    height: 60px;
-    align-items: center;
-}
-
-.flex nav {
-    margin-left: auto;
-}
-
-.flex .headerTitle { 
-    display: flex;
-    margin-right: 50px;
-}
-
-.flex ul {
-    display: flex;
-    margin-right: 50px;
-}
-
-.flex ul li {
-    margin-left: 20px;
-}
-
-.current-work { 
-    display: flex; /* 子要素をflexboxで揃える */
-    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
-    justify-content: center; /* 子要素をflexboxにより中央に配置する */
-    align-items: center;  /* 子要素をflexboxにより中央に配置する */
-}
-
 .header {
     width: $header-width;
     height: $header-height;
@@ -57,7 +43,7 @@
         .header__logo--image {
             width: 5%;
             height: 34px;
-            margin: 10px 50px;
+            margin: auto 50px;
         }
     
         .header__logo--title { 
@@ -69,12 +55,38 @@
             color: #616477;
         }
     }
+
+    .headerNav{
+        margin: auto 30px auto auto;
+
+        .headerNav__list { 
+            list-style: none;
+    
+            a { 
+                text-decoration: none;
+            }
+    
+            .icon {
+                font-size: 3em;
+                color: #616477;
+                margin-left: 20px;
+                margin-right:20px;
+            }
+        }
+    }
 }
 
 .container { 
     width: $container-width;
     margin-right: auto;
     margin-left: auto;
+}
+
+.current-work { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;  
 }
 
 .current-work {
