@@ -65,7 +65,10 @@ header {
 }
 
 .container { 
-    margin: 0px 200px;
+    width: 100%;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .current-work {

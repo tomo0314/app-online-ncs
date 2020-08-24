@@ -16,9 +16,9 @@ Route::get('/', function () {
 });
 
 Route::get('/sample', function () {
-    return view('sample');
+    return view('pages/sample');
 });
 
 Route::get('/top', function () {
-    return view('top');
+    return view('pages/work_top');
 });
