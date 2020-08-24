@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ asset('css/style_top.css') }}" rel="stylesheet"> 
+        <link href="{{ asset('css/work_top.css') }}" rel="stylesheet"> 
 
     </head>
     <body>
