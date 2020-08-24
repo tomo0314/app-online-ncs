@@ -13,27 +13,28 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ asset('css/style_top.css') }}" rel="stylesheet"> 
+        <link href="{{ mix('css/work_top.css') }}" rel="stylesheet"> 
 
     </head>
+
     <body>
         <div class="wrapper">
             <header class="header flex">
-                <div class="headerTitle">
-                    <img class="logo" src="{{ asset('/images/logo_NCS.png') }}" alt="ロゴ">
-                    <h1 class="title"> Narrative Career School Online </h1>
+                <div class="header__logo flex">
+                    <img class="header__logo--image flex" src="{{ asset('/images/logo_NCS.png') }}" alt="ロゴ">
+                    <h1 class="header__logo--title flex"> Narrative Career School Online </h1>
                 </div>
 
-                <nav>
-                    <ul class="header-nav">
-                        <li class="headerContent">
-                            <a href="">通知<!-- Todo: アイコン入れる --></a>
+                <nav class="headerNav flex">
+                    <ul class="headerNav__list flex">
+                        <li class="headerNav__list--bell flex">
+                            <a href="/top"><i class="icon far fa-bell"></i></a>
                         </li>
-                        <li class="headerContent">
-                            <a href="">プロフィール<!-- Todo: アイコン入れる --></a>
+                        <li class="headerNav__list--profile flex">
+                            <a href="/top"><i class="icon far fa-user-circle"></i></a>
                         </li>
-                        <li class="headerContent">
-                            <a href="">フォーム<!-- Todo: アイコン入れる --></a>
+                        <li class="headerNav__list--mentoring flex">
+                            <a href="/top"><i class="icon fas fa-chalkboard-teacher"></i></a>
                         </li>
                     </ul>
                 </nav>
