@@ -22,3 +22,7 @@ Route::get('/sample', function () {
 Route::get('/top', function () {
     return view('pages/work_top');
 });
+
+Route::get('/takeScreen', function () {
+    return view('pages/work_takeScreen');
+});
