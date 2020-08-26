@@ -38,7 +38,30 @@
             </nav>
         </header>
         <main>
-            <div>動画</div>
+            <div class="sidebar">ナビゲーション</div>
+            <div class="videoViewer__container">動画
+                <div class="videoPlayer">動画埋め込み</div>
+                <div class="dashboard__container">
+                    <div>概要</div>
+                    <div>Q&A</div>
+                    <div>メンターに相談してみる</div>
+                    <div>直接ダウンロード</div>
+                </div>
+            </div>
         </main>
+        <footer>
+            <div class="logo">
+                <img><!-- Todo:ロゴ画像入れる --></img>
+            </div>
+
+            <ul>
+                <li><a href="">お問い合わせ</li>
+                <li><a href="">このサイトについて</li>
+                <li><a href="">利用規約</li>
+            </ul>
+            <p>
+                <small>Copyright 2020 Narrative career school</small>
+            </p>
+        </footer>
     </body>
 </html>
