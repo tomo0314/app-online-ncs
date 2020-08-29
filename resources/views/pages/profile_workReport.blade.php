@@ -7,6 +7,9 @@
 
 @section('content')
     <!-- BodyのHTMLをここに書く（headerとfooterは自動で継承される） -->
+    <body>
+        <div class="red">kodai</div>
+    </body>
 @endsection
 
         <!-- Fonts -->
@@ -16,7 +19,4 @@
         <!-- Todo: CSSのパス変更する -->
         <link href="{{ asset('css/profile_workReport.css') }}" rel="stylesheet"> 
     </head>
-    <body>
-        <div class="red">kodai</div>
-    </body>
 </html>
