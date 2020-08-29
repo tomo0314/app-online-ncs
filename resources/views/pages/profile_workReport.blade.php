@@ -8,7 +8,7 @@
 @section('content')
     <!-- BodyのHTMLをここに書く（headerとfooterは自動で継承される） -->
     <body>
-        <div class="sideNav"></div>
+        <aside class="sideNav"></aside>
         <div class="title"></div>
         <div class="main"></div>
     </body>
