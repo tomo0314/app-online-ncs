@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
 
-        <title><!-- Todo; ページタイトル --></title>
+@section('style_content')
+    <!-- Todo : このページ用のCSSファイルにパスを変更する -->
+    <link href="{{ mix('css/work_top.css') }}" rel="stylesheet"> 
+@endsection
 
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+@section('content')
+    <!-- BodyのHTMLをここに書く（headerとfooterは自動で継承される） -->
+@endsection
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
