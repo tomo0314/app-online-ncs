@@ -8,7 +8,9 @@
 @section('content')
     <!-- BodyのHTMLをここに書く（headerとfooterは自動で継承される） -->
     <body>
-        <div class="red">kodai</div>
+        <div class="sideNav"></div>
+        <div class="title"></div>
+        <div class="main"></div>
     </body>
 @endsection
 
