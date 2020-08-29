@@ -1,7 +1,7 @@
-@extends('layout')
+@extends('layout_white')
 
 @section('style_content')
-    <link href="{{ mix('css/work_top.css') }}" rel="stylesheet"> 
+<link href="{{ mix('css/work_top.css') }}" rel="stylesheet"> 
 @endsection
 
 @section('content')
