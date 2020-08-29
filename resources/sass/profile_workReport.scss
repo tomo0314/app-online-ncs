@@ -24,6 +24,9 @@
     align-items: center;
     .sideNav_img{
       width: 50;
+      background-color: rgb(207, 229, 247);
+      border-radius: 100px;
+      opacity: 1;
     }
   }
   .sideNav_menu{
@@ -62,6 +65,14 @@
   .main_content--position{
     margin-top: 5%;
     margin-bottom: 5%;
+    .main_recommend--area{
+      display: flex;
+      margin-left: 5%;
+      .main_recommend--img{
+        width: 75;
+        margin-left: 5%;
+      }
+    }
   }
   .main_content--position:first-child{
     margin-top: 0%;
@@ -88,7 +99,7 @@
   }
   .main_sentence--fontStyle{
     color: $font-color;
-    font: normal normal 900 12px/33px Avenir;
+    font: normal normal 900 16%/33px Avenir;
     letter-spacing: 0px;
     opacity: 1;
   }

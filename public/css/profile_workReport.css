@@ -10925,6 +10925,9 @@ a.text-dark:focus {
 
 .sideNav .sideNav_img--position .sideNav_img {
   width: 50;
+  background-color: #cfe5f7;
+  border-radius: 100px;
+  opacity: 1;
 }
 
 .sideNav .sideNav_menu {
@@ -10967,6 +10970,16 @@ a.text-dark:focus {
   margin-bottom: 5%;
 }
 
+.main .main_content--position .main_recommend--area {
+  display: flex;
+  margin-left: 5%;
+}
+
+.main .main_content--position .main_recommend--area .main_recommend--img {
+  width: 75;
+  margin-left: 5%;
+}
+
 .main .main_content--position:first-child {
   margin-top: 0%;
   margin-bottom: 4%;
@@ -10996,7 +11009,7 @@ a.text-dark:focus {
 
 .main .main_sentence--fontStyle {
   color: #616477;
-  font: normal normal 900 12px/33px Avenir;
+  font: normal normal 900 16%/33px Avenir;
   letter-spacing: 0px;
   opacity: 1;
 }

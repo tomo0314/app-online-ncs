@@ -64,11 +64,19 @@
                 <div class="main_content--position">
                     <div class="main_index">あなたにおすすめのコミュニティ・人・会社・学問の情報</div>
                     <div></div>
-                    <div>
-                        <div><img></div>
-                        <div><img></div>
-                        <div><img></div>
-                        <div><img></div>
+                    <div class="main_recommend--area">
+                        <div>
+                            <img class="main_recommend--img" src="{{ asset('/images/design_material/community.png') }}" alt="コミュニティ">
+                        </div>
+                        <div class="main_recommend--img">
+                            <img class="main_recommend--img" src="{{ asset('/images/design_material/person.png') }}" alt="人">
+                        </div>
+                        <div class="main_recommend--img">
+                            <img class="main_recommend--img" src="{{ asset('/images/design_material/company.png') }}" alt="会社">
+                        </div>
+                        <div class="main_recommend--img">
+                            <img class="main_recommend--img" src="{{ asset('/images/design_material/academic.png') }}" alt="学問">
+                        </div>
                     </div>
                 </div>
                 <div class="main_content--position">
