@@ -8,10 +8,19 @@
 @import '~bootstrap/scss/bootstrap';
 
 .sideNav{
+  margin-left: 5%;
+  width: 15%;
+  ul{
+    list-style: none;
+  }
 }
 
 .title{
+  height: 8%;
+  
 }
 
 .main{
+  margin-right: 8%;
+
 }
