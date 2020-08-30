@@ -1,0 +1,30 @@
+// Variables
+@import 'variables';
+
+// ======== SCSS ============ //
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+
+// flex 
+.flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+
+// header 
+.header {
+  width: $header-width;
+  height: $header-height;
+  flex-direction: row;
+  justify-content: left; 
+  align-items: center;      
+  background: $header-background;
+}
