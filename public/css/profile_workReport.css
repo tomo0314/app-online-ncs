@@ -10941,6 +10941,7 @@ a.text-dark:focus {
   font: normal normal 900 14px/33px Avenir;
   letter-spacing: 0px;
   opacity: 1;
+  margin-top: 5%;
 }
 
 .container--column {
@@ -10953,10 +10954,9 @@ a.text-dark:focus {
   width: 100%;
   text-align: center;
   color: #616477;
-  font: normal normal 900 18px/30px Avenir;
+  font: normal normal 900 22px/30px Avenir;
   letter-spacing: 0px;
   opacity: 1;
-  font-weight: bold;
 }
 
 .main {
@@ -10984,7 +10984,6 @@ a.text-dark:focus {
 
 .main .main_content--position .main_recommend--area .main_recommend--img {
   width: 75;
-  margin-left: 5%;
 }
 
 .main .main_content--position:first-child {
@@ -11030,7 +11029,7 @@ a.text-dark:focus {
   margin-right: 10%;
 }
 
-.main .main_tags {
+.main .main_tags--position .main_tags {
   border: solid 2px #707070;
   border-radius: 100px;
   margin-left: 1%;
@@ -11042,6 +11041,10 @@ a.text-dark:focus {
 .main .main_workReport {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.main .main_workReport .main_workReport--space {
+  margin-top: 5%;
 }
 
 .main .main_ranking_position {
