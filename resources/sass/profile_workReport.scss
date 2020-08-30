@@ -55,6 +55,7 @@
   font: normal normal 900 18px/30px Avenir;
   letter-spacing: 0px;
   opacity: 1;
+  font-weight: bold;
 }
 
 .main{
@@ -65,9 +66,14 @@
   .main_content--position{
     margin-top: 5%;
     margin-bottom: 5%;
+    .main_index--underline{
+      border-top: solid 2px $white;
+    }
     .main_recommend--area{
       display: flex;
-      margin-left: 5%;
+      justify-content: space-around;
+      margin-left: 10%;
+      margin-right: 10%;
       .main_recommend--img{
         width: 75;
         margin-left: 5%;
@@ -88,6 +94,8 @@
     letter-spacing: 0px;
     opacity: 1;
     margin-bottom: 2%;
+    border-bottom: solid 4px $blue;
+    text-align: center;
   }
   .main_baseData{
     border: solid 2px $border;
@@ -123,8 +131,7 @@
   }
   .main_ranking_position{
     display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
+    justify-content: space-around;
   }
   .main_strongPoint--position{
     width: 40%;
@@ -132,6 +139,7 @@
   .main_strongTitle{
     text-align: center;
     margin: 0;
+    padding-left: 10%;
   }
   .main_strong{
     border: solid 2px $border;

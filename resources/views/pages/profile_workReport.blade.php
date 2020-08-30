@@ -30,13 +30,17 @@
             <div class="title">公開プロフィール</div>
             <div class="main">
                 <div class="main_content--position">
-                    <div class="main_index">基本情報</div>
-                    <div></div>
+                    <div style="display:flex;">
+                        <div class="main_index">基本情報</div>
+                        <div class="main_index--underline"></div>
+                    </div>
                     <div class="main_baseData">〇〇大学△学部□学科です。趣味は音楽・洋服・カフェ巡り・映画観賞です。よろしくお願いします！</div>
                 </div>
                 <div class="main_content--position">
-                    <div class="main_index">マイハッシュタグ</div>
-                    <div></div>
+                    <div style="display:flex;">
+                        <div class="main_index">マイハッシュタグ</div>
+                        <div class="main_index--underline"></div>
+                    </div>
                     <div class="main_tags--position">
                         <div class="main_tags main_sentence--fontStyle">#アート</div>
                         <div class="main_tags main_sentence--fontStyle">#哲学</div>
@@ -45,8 +49,10 @@
                     </div>
                 </div>
                 <div class="main_content--position">
-                    <div class="main_index">ワークレポート</div>
-                    <div></div>
+                    <div style="display:flex;">
+                        <div class="main_index">ワークレポート</div>
+                        <div class="main_index--underline"></div>
+                    </div>
                     <div class="main_workReport">
                         <p class="main_sentence--fontStyle">【A】私のやりたいことは（ソウルセンテンス）を通じて、（）な人を（）にしたり、（）な人を（）にすることです。
                             <br>それを通じて（）な人に（）のような影響を与えたり、（）な人に（）になってほしいです。
@@ -62,8 +68,10 @@
                     </div>
                 </div>
                 <div class="main_content--position">
-                    <div class="main_index">あなたにおすすめのコミュニティ・人・会社・学問の情報</div>
-                    <div></div>
+                    <div style="display:flex;">
+                        <div class="main_index">あなたにおすすめのコミュニティ・人・会社・学問の情報</div>
+                        <div class="main_index--underline"></div>
+                    </div>
                     <div class="main_recommend--area">
                         <div>
                             <img class="main_recommend--img" src="{{ asset('/images/design_material/community.png') }}" alt="コミュニティ">
@@ -80,8 +88,10 @@
                     </div>
                 </div>
                 <div class="main_content--position">
-                    <div class="main_index">強み・弱い分析</div>
-                    <div></div>
+                    <div style="display:flex;">
+                        <div class="main_index">強み・弱い分析</div>
+                        <div class="main_index--underline"></div>
+                    </div>
                     <div class="main_ranking_position">
                         <div class="main_strongPoint--position">
                             <p class="main_sentence--fontStyle main_strongTitle">強み</p>
