@@ -22,3 +22,5 @@ Route::get('/works', function () {
 Route::get('/works/typeA', function () {
     return view('pages/work_detail');
 });
+
+Route::get("/test", "FireTestController@show");
