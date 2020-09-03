@@ -12,6 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-.sass('resources/sass/layout.scss', 'public/css')
-.sass('resources/sass/work_top.scss', 'public/css')
-
+    .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/sass/profile_workReport.scss', 'public/css')
+    .sass('resources/sass/layout.scss', 'public/css')
+    .sass('resources/sass/work_top.scss', 'public/css');
