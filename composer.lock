@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0703feee543f2c56d3208ce482e2df5",
+    "content-hash": "928e6a05558aa52f5c77ec2e920e0f82",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1016,16 +1016,16 @@
         },
         {
             "name": "kreait/firebase-php",
-            "version": "5.7.0",
+            "version": "5.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kreait/firebase-php.git",
-                "reference": "265e7ad53d2fe1fcfbbb387e2f70b48761ce7e79"
+                "reference": "9975417777a1f33f12894380f3e6f8f2a6923050"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kreait/firebase-php/zipball/265e7ad53d2fe1fcfbbb387e2f70b48761ce7e79",
-                "reference": "265e7ad53d2fe1fcfbbb387e2f70b48761ce7e79",
+                "url": "https://api.github.com/repos/kreait/firebase-php/zipball/9975417777a1f33f12894380f3e6f8f2a6923050",
+                "reference": "9975417777a1f33f12894380f3e6f8f2a6923050",
                 "shasum": ""
             },
             "require": {
@@ -1093,7 +1093,7 @@
                 "google",
                 "sdk"
             ],
-            "time": "2020-07-19T15:55:17+00:00"
+            "time": "2020-08-23T21:34:50+00:00"
         },
         {
             "name": "kreait/firebase-tokens",
@@ -5726,6 +5726,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {

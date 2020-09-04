@@ -1,0 +1,306 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+
+// ======== SCSS ============ //
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+
+// flex 
+.flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+// workHeadLine
+.workHeadLine {
+    width :100%;
+    height: 300px;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;     
+
+    .workHeadLine__container--1 {
+        width: 30%;
+        height: 80%;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        margin-left:5%;
+
+        .workHeadLine__headLine {
+            width: 90%;
+            flex-direction: row; 
+            justify-content: space-around; 
+            align-items: center;
+
+            .workHeadLine__headLine--workName {
+                width: 60%;
+                height: 80px;
+                flex-direction: row;
+                justify-content: center; 
+                align-items: center;
+                border: solid 1px;
+                border-radius: 10px;
+                border-color: $font-color;
+                p {
+                    font-size: $font-size-base;
+                    font-weight: bold;
+                    color: $font-color;
+                }  
+                i {
+                    font-size:40px;
+                    color: lightgray;
+                    margin:auto 20px;
+                }
+            }
+            .workHeadLine__pageDesc {
+                width: 30%;
+                height: 80px;
+                flex-direction: column;
+    
+                .workHeadLine__pageDesc--1 {
+                    font-size: $font-size-base;
+                    font-weight: bold;
+                    color: $font-color;
+                    margin-bottom: 10px;
+                }
+                .workHeadLine__pageDesc--2 {  
+                    font-size: $font-size-base;
+                    font-weight: bold;
+                    color: $font-color;
+                }
+            }
+        }   
+    
+        .workHeadLine__progress {
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            width: 100%;
+            margin: 40px auto;
+            .workHeadLine__progress--flag {
+                height: 30px;
+                width: 30px;
+            }
+            .workHeadLine__progress--headLine {
+                font-size: $font-size-base;
+                font-weight: bold;
+                color: $font-color;
+            }
+            .workHeadLine__progress--bar {
+                width:50%;
+                height:10px;
+                margin: auto 10px;
+                background: lightblue;
+            }
+            .workHeadLine__progress--percentage {
+                font-size: $font-size-base;
+                font-weight: bold;
+                color: $font-color;
+            }
+        }
+    }
+    .workHeadLine__container--2 {
+        width: 20%;
+        height: 80%;
+        margin-right:10%;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;      
+        background : transparent linear-gradient(180deg, #b2d8f5 0%, #F9FCFE 100%) 0% 0% no-repeat padding-box;
+        border-radius: 10%;
+        
+        .currentWork__content--title {
+            height: 5%;
+            margin: 3% auto;
+            font-size: $font-size-h3;
+            font-weight: bold;
+            color: $font-color;    
+        }
+        .currentWork__content--img {
+            width: 10%;
+            height: 10%;
+            margin: 5% auto;
+            
+        }
+        .currentWork__content--desc {
+            margin: 5% auto;
+            font-size: $font-size-small;
+            font-weight: bold;
+            color: $font-color;    
+        }
+        .currentWork__content--progressBar {
+            margin: 5% auto;
+            width: 40%;
+            height: 15px;
+            background: lightgreen;
+            border-radius:20px 20px;
+        }
+    }
+
+}
+
+// workRelatiton
+.workRelation {
+    width :100%;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+    .workRelation__headLine {
+        height: 10%;
+        width: 100%;
+        padding: 20px 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        p {
+            font-size: $font-size-h3;
+            font-weight: bold;
+            color: $font-color;
+        }
+    }
+    
+    .workRelation__works {
+        height:90%;
+        width:100%;
+        flex-direction: row;
+        justify-content: center;
+        border-top: solid lightblue;
+        border-bottom:solid lightblue;
+
+        .workRelation__work {
+            width: 18%;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            border-right: dashed lightblue;
+            border-left:dashed lightblue;      
+            .workRelation__work--desc{
+                font-size: $font-size-base;
+                font-weight: bold;
+                color: $font-color;
+            }     
+            .workRelation__work--name{
+                font-size: $font-size-h3;
+                font-weight: bold;
+                color: $font-color;
+                margin:20px auto;
+            }     
+        }
+    }
+}
+
+
+// processChart
+.processChart {
+    width :80%;
+    height: 2000px;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin: 100px auto;
+
+    .processChart__body {
+        height:25%;
+        width:100%;
+        flex-direction: column;
+        margin-bottom:10%;
+        
+        .processChart__headLine {
+            height:10%;
+            width: 100%;
+            margin: 20px 0;
+            flex-direction: row;
+            align-items: center; 
+            border-left: solid 4px #7db4e6;
+        
+            .processChart__headLine--headLine {
+                font-size: $font-size-headLine;
+                font-weight: bold;
+                color: $font-color;
+                margin-left: 10px;
+            }
+            .processChart__headLine--desc {
+                margin-left:20px;
+                font-size: $font-size-h3;
+                font-weight: normal;
+                color: $font-color;
+            }
+        }
+
+        .processChart__works {
+            height: 80%;
+            width:100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start; 
+            align-items: center;         
+
+            .processChart__work {
+                height: 50%;
+                width:20%;
+                flex-direction: column;
+                justify-content: center; 
+                align-items: center;             
+                margin-right: 5%;
+                margin-bottom:3%;
+                background: white;
+                border: solid 2px #7db4e6;
+                border-radius: 25px;   
+                
+                font-size: $font-size-base;
+                font-weight: normal;
+                color: $font-color;
+            }
+        }
+    }
+    .processChart__body--4 {
+        margin-bottom:0;
+    }
+
+    //button--forWork
+    .button--forWork {
+        height: 200px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;   
+        button {
+            //reset
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            appearance: none;
+
+            //css
+            height: 40%;
+            width: 20%;
+            background:transparent linear-gradient(180deg, #b5ddf8 0%, #c9dceb 100%) 0% 0% no-repeat padding-box;
+            border-radius: 50px;
+        }          
+    }
+}
