@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('pages/sample');
 });
 
+Route::get('/login', function () {
+    return view('pages/login');
+});
+
 Route::get('/works', function () {
     return view('pages/work_top');
 });
