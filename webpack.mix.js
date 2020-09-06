@@ -17,4 +17,4 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/work_top.scss', 'public/css')
     .sass('resources/sass/work_detail.scss', 'public/css')
     .sass('resources/sass/login.scss', 'public/css')
-
+    .sass('resources/sass/signup.scss', 'public/css')

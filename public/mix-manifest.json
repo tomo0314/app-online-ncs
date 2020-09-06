@@ -4,5 +4,6 @@
     "/css/layout_blue.css": "/css/layout_blue.css",
     "/css/work_top.css": "/css/work_top.css",
     "/css/work_detail.css": "/css/work_detail.css",
-    "/css/login.css": "/css/login.css"
+    "/css/login.css": "/css/login.css",
+    "/css/signup.css": "/css/signup.css"
 }
