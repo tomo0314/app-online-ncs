@@ -1,17 +1,11 @@
 // Fonts
-// @import url('https://fonts.googleapis.com/css?family=Nunito');
-
-// Font Awesome
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/brands';
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
-// @import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap';
 
 
 // ======== SCSS ============ //
@@ -22,11 +16,99 @@
 }
 
 
-// flex //
-.flex {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+// container //
+.container{
     display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* ======== sidebar ======== */
+.sidebar{
+    width: 20%;
+    border: solid 1px $border;
+    padding-right: 10px;
+    padding-left: 10px;
+    ul{
+        list-style: none;
+    }
+}
+
+/* ======== movieArea ======== */
+.movieArea{
+    width: 50%;
+    border: solid 1px $border;
+    ul{
+        list-style: none;
+    }
+}
+
+.movieArea__nav-header{
+    height: 60px;
+    display: flex; 
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: solid 1px $border;
+    align-items: center;
+    .title{
+        width:90%;
+        text-align: center;
+    }
+    button{
+        width: 10%;
+        height: 30px;
+        text-align: center;
+        padding-right: 1%;
+        border: none;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.movieArea__movie{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.movieArea__nav-footer{
+    ul{
+        display: flex; 
+    }
+}
+
+
+
+/* ======== memoArea ======== */
+.memoArea{
+    width: 30%;
+    border: solid 1px $border;
+    .titleArea{
+        height: 60px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        // padding-bottom: 20px;
+        text-align: center;
+        border-bottom: solid 1px $border;
+    }
+    .contentsArea{
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+        .memo__textarea{
+            resize: none;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .saveButton{
+            text-align: center;
+            border-radius: 15px;
+            padding: 1% 10%;
+            font-size: 80%;
+        }
+    }
 }
