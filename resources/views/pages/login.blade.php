@@ -13,32 +13,32 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ mix('css/work_top.css') }}" rel="stylesheet"> 
+        <link href="{{ mix('css/login.css') }}" rel="stylesheet"> 
     </head>
 
     <body>
-        <div class="wrapper">
-            <div class="login">
+        <div class="wrapper flex">
+            <div class="login flex">
                 <div class="login__logo">
-                
+                    <img class="login__logo--image" src="{{ asset('/images/logo.png') }}" alt="ロゴ">
                 </div>
 
                 <table class="login__form">
                     <tr class="login__form--headLine">
-                        <th>メールアドレス：</th>
+                        <th>メールアドレス</th>
                     </tr>
                     <tr class="login__form--input">
                         <td><input type="email" v-model="mailaddress"/></td>
                     </tr>
                     <tr  class="login__form--headLine">
-                        <th>パスワード：</th>
+                        <th>パスワード</th>
                     </tr>
                     <tr class="login__form--input">
                         <td><input type="password" v-model="password"/></td>
                     </tr>
                 </table>
 
-                <button @click="signUp">登録</button>
+                <button class="login__button" @click="signUp">登録</button>
             </div>  
         </div>
     </body>
