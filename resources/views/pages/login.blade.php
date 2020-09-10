@@ -18,7 +18,7 @@
 
     <body>
         <div class="wrapper flex">
-            <div class="login flex">
+            <div class="login__container flex">
                 <div class="login__logo">
                     <img class="login__logo--image" src="{{ asset('/images/logo.png') }}" alt="ロゴ">
                 </div>

@@ -14,3 +14,100 @@ button {
           appearance: none;
 }
 
+.flex {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.container {
+  width: 30%;
+  height: 100vh;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup__headLine {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #616477;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup__headLine .signup__headLine--letter {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup--wrapper {
+  width: 100%;
+  height: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup--wrapper .signup__form--title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #616477;
+  align-self: flex-start;
+}
+
+.signup--wrapper .signup__container {
+  width: 100%;
+  height: 80%;
+  padding: 1rem 1rem;
+  background: #ececec;
+  border-radius: 1rem;
+}
+
+.signup--wrapper .signup__container .signup__form {
+  width: 100%;
+  height: 100%;
+  padding: 5% 10%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup--wrapper .signup__container .signup__form .signup__form--headLine {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #616477;
+}
+
+.signup--wrapper .signup__container .signup__form .signup__form--input input {
+  height: 30px;
+  width: 100%;
+  border: 0px none;
+  border-radius: 0.3rem;
+}
+
+.signup__policy {
+  margin: 2rem auto;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #616477;
+}
+
+.signup__policy a {
+  text-decoration: none;
+  color: lightcoral;
+}
+
+.signup__button {
+  height: 50px;
+  width: 50%;
+  background: lightcoral;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
