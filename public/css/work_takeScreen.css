@@ -10907,108 +10907,173 @@ a.text-dark:focus {
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.button {
+  text-align: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .container {
+  max-width: 100%;
   display: flex;
   justify-content: center;
-  width: 100%;
+  padding: 0;
 }
 
 /* ======== sidebar ======== */
 
 .sidebar {
-  width: 20%;
-  border: solid 1px #707070;
-  padding-right: 10px;
-  padding-left: 10px;
+  width: 25%;
+  border-right: 1px solid #BEBEBE;
 }
 
-.sidebar ul {
-  list-style: none;
-}
-
-/* ======== movieArea ======== */
-
-.movieArea {
-  width: 50%;
-  border: solid 1px #707070;
-}
-
-.movieArea ul {
-  list-style: none;
-}
-
-.movieArea__nav-header {
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border-bottom: solid 1px #707070;
-  align-items: center;
-}
-
-.movieArea__nav-header .title {
-  width: 90%;
-  text-align: center;
-}
-
-.movieArea__nav-header button {
-  width: 10%;
+.sidebar .titleArea {
   height: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #707070;
+}
+
+.sidebar .titleArea .sidebar__closeButton {
   text-align: center;
-  padding-right: 1%;
-  border: none;
+  cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   outline: none;
-  cursor: pointer;
+  padding-left: 10px;
+  background-color: transparent;
+  border: none;
 }
 
-.movieArea__movie {
-  padding-right: 10px;
+.sidebar .titleArea .sidebar__workTitle {
+  font-size: 1vw;
   padding-left: 10px;
 }
 
-.movieArea__nav-footer ul {
+.sidebar .sidebar__progress {
+  height: 500px;
+  overflow-y: scroll;
+  padding-left: 17px;
+}
+
+.sidebar .sidebar__progress table {
+  padding-left: 5px;
+}
+
+.sidebar .sidebar__progress table td {
+  padding: 12px 13px 14px 0;
+  font-size: 90%;
+}
+
+/* ======== 動画＆メモエリア ======== */
+
+.contentsArea {
+  width: 100%;
+  /* ======== タイトルバー */
+  /* ======== 動画・メモエリア */
+}
+
+.contentsArea .titleArea {
   display: flex;
-}
-
-/* ======== memoArea ======== */
-
-.memoArea {
-  width: 30%;
-  border: solid 1px #707070;
-}
-
-.memoArea .titleArea {
-  height: 60px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
+  height: 30px;
+  width: 100%;
+  background: #F7F7F7;
+  align-items: center;
   border-bottom: solid 1px #707070;
 }
 
-.memoArea .contentsArea {
-  padding-right: 10px;
-  padding-left: 10px;
+.contentsArea .titleArea .title__workName {
+  width: 50%;
   text-align: center;
 }
 
-.memoArea .contentsArea .memo__textarea {
-  resize: none;
+.contentsArea .titleArea .button__backForward {
+  width: 50px;
+}
+
+.contentsArea .titleArea .title__memo {
+  width: 45%;
+  text-align: center;
+}
+
+.contentsArea .contents__movieAndMemo {
+  display: flex;
+  /* ======== 動画エリア  */
+  /* ======== メモエリア  */
+}
+
+.contentsArea .contents__movieAndMemo .movieArea {
+  width: 55%;
+}
+
+.contentsArea .contents__movieAndMemo .movieArea .movieArea__nav {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  font-size: 0.8vw;
+  border-bottom: solid 1px #707070;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.contentsArea .contents__movieAndMemo .movieArea .movieArea__nav .left {
+  width: 100px;
+  display: flex;
+}
+
+.contentsArea .contents__movieAndMemo .movieArea .movieArea__nav .left div {
+  width: 40px;
+}
+
+.contentsArea .contents__movieAndMemo .movieArea .movieArea__nav .right {
+  width: 220px;
+  display: flex;
+}
+
+.contentsArea .contents__movieAndMemo .movieArea .movieArea__nav .right div {
+  width: 115px;
+}
+
+.contentsArea .contents__movieAndMemo .memoArea {
+  width: 45%;
+  height: 500px;
+  padding: 1%;
+  border-left: 8px solid #BEBEBE;
+}
+
+.contentsArea .contents__movieAndMemo .memoArea .text-and-saveButton {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.contentsArea .contents__movieAndMemo .memoArea .memoTitle {
   width: 100%;
+}
+
+.contentsArea .contents__movieAndMemo .memoArea .textarea {
+  width: 80%;
+  resize: none;
+  border-color: #BEBEBE;
   margin-bottom: 20px;
 }
 
-.memoArea .contentsArea .saveButton {
-  text-align: center;
+.contentsArea .contents__movieAndMemo .memoArea .saveButton {
+  height: 30px;
+  width: 80px;
+  font-size: 50%;
+  color: #616477;
   border-radius: 15px;
-  padding: 1% 10%;
-  font-size: 80%;
+  border: none;
+  background: transparent linear-gradient(180deg, #52A5E3 0%, #89BADE 49%, #C2CFD9 100%);
 }
 

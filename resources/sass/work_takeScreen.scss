@@ -13,102 +13,161 @@
 * { 
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
+.button{
+    text-align: center;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
 
 // container //
 .container{
+    max-width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
+    padding: 0;
 }
 
 
 /* ======== sidebar ======== */
 .sidebar{
-    width: 20%;
-    border: solid 1px $border;
-    padding-right: 10px;
-    padding-left: 10px;
-    ul{
-        list-style: none;
-    }
-}
-
-/* ======== movieArea ======== */
-.movieArea{
-    width: 50%;
-    border: solid 1px $border;
-    ul{
-        list-style: none;
-    }
-}
-
-.movieArea__nav-header{
-    height: 60px;
-    display: flex; 
-    justify-content: center;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-bottom: solid 1px $border;
-    align-items: center;
-    .title{
-        width:90%;
-        text-align: center;
-    }
-    button{
-        width: 10%;
-        height: 30px;
-        text-align: center;
-        padding-right: 1%;
-        border: none;
-        appearance: none;
-        outline: none;
-        cursor: pointer;
-    }
-}
-
-.movieArea__movie{
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.movieArea__nav-footer{
-    ul{
-        display: flex; 
-    }
-}
-
-
-
-/* ======== memoArea ======== */
-.memoArea{
-    width: 30%;
-    border: solid 1px $border;
+    width:25%;
+    border-right: 1px solid $bd_lg;
     .titleArea{
-        height: 60px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        // padding-bottom: 20px;
-        text-align: center;
+        height: 30px;
+        display: flex;
+        align-items: center;
         border-bottom: solid 1px $border;
-    }
-    .contentsArea{
-        padding-right: 10px;
-        padding-left: 10px;
-        text-align: center;
-        .memo__textarea{
-            resize: none;
-            width: 100%;
-            margin-bottom: 20px;
-        }
-        .saveButton{
+        
+        .sidebar__closeButton{
             text-align: center;
-            border-radius: 15px;
-            padding: 1% 10%;
-            font-size: 80%;
+            cursor: pointer;
+            appearance: none;
+            outline: none;
+            padding-left: 10px;
+            background-color: transparent;
+            border: none;
+        }
+        .sidebar__workTitle{
+            font-size: 1vw;
+            padding-left: 10px;
         }
     }
+    .sidebar__progress{
+        height: 500px;
+        overflow-y: scroll;
+        padding-left: 17px;
+        
+        table{
+            padding-left: 5px;
+            td{
+                padding:12px 13px 14px 0;
+                font-size: 90%;
+            }
+        }
+    }
+    
+}
+
+
+/* ======== 動画＆メモエリア ======== */
+.contentsArea{
+    width:100%;
+    
+    /* ======== タイトルバー */
+    .titleArea{
+        display: flex;
+        height: 30px;
+        width: 100%;
+        background: $bg_gray;
+        align-items: center;
+        border-bottom: solid 1px $border;
+        .title__workName{
+            width:50%;
+            text-align: center;
+        }
+        .button__backForward{
+            width: 50px;
+        }
+        .title__memo{
+            width: 45%;
+            text-align: center;
+        }
+    }
+    
+    
+    
+    /* ======== 動画・メモエリア */
+    .contents__movieAndMemo{
+        display: flex;
+        
+        
+        /* ======== 動画エリア  */
+        .movieArea{
+            width: 55%;
+            
+            .movieArea__nav{
+                display: flex;
+                justify-content: space-between;
+                height:30px;
+                font-size: 0.8vw;
+                border-bottom: solid 1px $border;
+                text-align: center;
+                padding-top: 3px;
+                .left{
+                    width: 100px;
+                    display: flex;
+                    div{
+                        width: 40px;
+                    }
+                }
+                .right{
+                    width: 220px;
+                    display: flex;
+                    div{
+                        width: 115px;
+                    }
+                }
+            }
+        }
+        
+        
+        /* ======== メモエリア  */
+        .memoArea{
+            width: 45%;
+            height: 500px;
+            padding: 1%;
+            border-left: 8px solid $bd_lg;
+            
+            .text-and-saveButton{
+                text-align: center;
+                padding-top: 30px;
+            }
+            .memoTitle{
+                width: 100%;
+            }
+            .textarea{
+                width: 80%;
+                resize: none;
+                border-color: $bd_lg;
+                margin-bottom: 20px;
+            }
+            .saveButton{
+                height: 30px;
+                width: 80px;
+                font-size: 50%;
+                color: $gray;
+                border-radius: 15px;
+                border: none;
+                background: transparent linear-gradient(180deg, #52A5E3 0%, #89BADE 49%, #C2CFD9 100%)
+            }
+        }
+    }
+    
 }
