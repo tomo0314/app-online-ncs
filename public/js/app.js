@@ -37347,14 +37347,13 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!******************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/profile_workReport.scss ./resources/sass/layout.scss ./resources/sass/work_top.scss ***!
-  \******************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/profile_workReport.scss ./resources/sass/layout.scss ./resources/sass/work_top.scss ***!
+  \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /var/www/app-online-ncs/resources/js/app.js */"./resources/js/app.js");
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/var/www/app-online-ncs/resources/sass/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 __webpack_require__(/*! /var/www/app-online-ncs/resources/sass/profile_workReport.scss */"./resources/sass/profile_workReport.scss");
 __webpack_require__(/*! /var/www/app-online-ncs/resources/sass/layout.scss */"./resources/sass/layout.scss");
 module.exports = __webpack_require__(/*! /var/www/app-online-ncs/resources/sass/work_top.scss */"./resources/sass/work_top.scss");
