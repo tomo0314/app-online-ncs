@@ -15,10 +15,15 @@ Route::get('/', function () {
     return view('pages/sample');
 });
 
-Route::get('/top', function () {
+Route::get('/works', function () {
     return view('pages/work_top');
 });
 
 Route::get('/about', function () {
     return view('pages/profile_workReport');
 });
+Route::get('/works/typeA', function () {
+    return view('pages/work_detail');
+});
+
+Route::get("/test", "FireTestController@show");
