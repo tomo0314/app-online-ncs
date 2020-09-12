@@ -1,13 +1,16 @@
 @extends('layout')
 
 @section('style_content')
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
     <!-- Todo : このページ用のCSSファイルにパスを変更する -->
     <link href="{{ mix('css/profile_workReport.css') }}" rel="stylesheet"> 
 @endsection
 
 @section('content')
     <!-- BodyのHTMLをここに書く（headerとfooterは自動で継承される） -->
-    <div>
+    <div class="container__position">
     <div class ="container">
         <aside class="sideNav">
             <div class="sideNav__img--position">
@@ -147,11 +150,8 @@
     </div>
     </div>
 @endsection
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        
 
         <!-- Styles -->
         <!-- Todo: CSSのパス変更する -->
         <link href="{{ asset('css/profile_workReport.css') }}" rel="stylesheet"> 
-    </head>
-</html>
