@@ -1,0 +1,173 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+
+// ======== SCSS ============ //
+
+* { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.button{
+    text-align: center;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+// container //
+.container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+
+/* ======== sidebar ======== */
+.sidebar{
+    width:25%;
+    border-right: 1px solid $bd_lg;
+    .titleArea{
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-bottom: solid 1px $border;
+        
+        .sidebar__closeButton{
+            text-align: center;
+            cursor: pointer;
+            appearance: none;
+            outline: none;
+            padding-left: 10px;
+            background-color: transparent;
+            border: none;
+        }
+        .sidebar__workTitle{
+            font-size: 0.5vw;
+            padding-left: 10px;
+        }
+    }
+    .sidebar__progress{
+        height: 500px;
+        overflow-y: scroll;
+        padding-left: 17px;
+        
+        table{
+            padding-left: 5px;
+            td{
+                padding:12px 13px 14px 0;
+                font-size: 90%;
+            }
+        }
+    }
+    
+}
+
+
+/* ======== 動画＆メモエリア ======== */
+.contentsArea{
+    width:100%;
+    
+    /* ======== タイトルバー */
+    .titleArea{
+        display: flex;
+        height: 30px;
+        width: 100%;
+        background: $bg_gray;
+        align-items: center;
+        border-bottom: solid 1px $border;
+        .title__workName{
+            width:50%;
+            text-align: center;
+        }
+        .button__backForward{
+            width: 50px;
+        }
+        .title__memo{
+            width: 45%;
+            text-align: center;
+        }
+    }
+    
+    
+    
+    /* ======== 動画・メモエリア */
+    .contents__movieAndMemo{
+        display: flex;
+        
+        
+        /* ======== 動画エリア  */
+        .movieArea{
+            width: 55%;
+            
+            .movieArea__nav{
+                display: flex;
+                justify-content: space-between;
+                height:30px;
+                font-size: 0.8vw;
+                border-bottom: solid 1px $border;
+                text-align: center;
+                padding-top: 3px;
+                .left{
+                    width: 100px;
+                    display: flex;
+                    div{
+                        width: 40px;
+                    }
+                }
+                .right{
+                    width: 220px;
+                    display: flex;
+                    div{
+                        width: 115px;
+                    }
+                }
+            }
+        }
+        
+        
+        /* ======== メモエリア  */
+        .memoArea{
+            width: 45%;
+            height: 500px;
+            padding: 1%;
+            border-left: 8px solid $bd_lg;
+            
+            .text-and-saveButton{
+                text-align: center;
+                padding-top: 30px;
+            }
+            .memoTitle{
+                width: 100%;
+            }
+            .textarea{
+                width: 80%;
+                resize: none;
+                border-color: $bd_lg;
+                margin-bottom: 20px;
+            }
+            .saveButton{
+                height: 30px;
+                width: 80px;
+                font-size: 50%;
+                color: $gray;
+                border-radius: 15px;
+                border: none;
+                background: transparent linear-gradient(180deg, #52A5E3 0%, #89BADE 49%, #C2CFD9 100%)
+            }
+        }
+    }
+    
+}
