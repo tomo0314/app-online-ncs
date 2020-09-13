@@ -28,3 +28,7 @@ Route::get('/works/typeA', function () {
 });
 
 Route::get("/test", "FireTestController@show");
+
+Route::get('/about', function () {
+    return view('pages/profile_workReport');
+});
