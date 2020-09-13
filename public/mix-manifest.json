@@ -3,5 +3,9 @@
     "/css/profile_workReport.css": "/css/profile_workReport.css",
     "/css/layout.css": "/css/layout.css",
     "/css/work_top.css": "/css/work_top.css",
-    "/css/work_takeScreen.css": "/css/work_takeScreen.css"
+    "/css/work_takeScreen.css": "/css/work_takeScreen.css",
+    "/css/layout_white.css": "/css/layout_white.css",
+    "/css/work_top.css": "/css/work_top.css",
+    "/css/work_detail.css": "/css/work_detail.css",
+    "/css/layout_blue.css": "/css/layout_blue.css"
 }
