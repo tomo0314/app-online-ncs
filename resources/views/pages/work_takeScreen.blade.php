@@ -1,5 +1,10 @@
 @extends('layout')
 
+@section('style_header-footer')
+<link href="{{ mix('css/layout_blue.css') }}" rel="stylesheet"> 
+@endsection
+
+
 @section('style_content')
     <link href="{{ mix('css/work_takeScreen.css') }}" rel="stylesheet"> 
 @endsection
