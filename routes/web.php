@@ -19,6 +19,13 @@ Route::get('/works', function () {
     return view('pages/work_top');
 });
 
+Route::get('/takeScreen', function () {
+    return view('pages/work_takeScreen');
+});
+    
+Route::get('/about', function () {
+    return view('pages/profile_workReport');
+});
 Route::get('/works/typeA', function () {
     return view('pages/work_detail');
 });
