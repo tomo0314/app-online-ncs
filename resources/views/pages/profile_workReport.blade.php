@@ -151,11 +151,3 @@
     </div>
     </div>
 @endsection
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <!-- Todo: CSSのパス変更する -->
-        <link href="{{ asset('css/profile_workReport.css') }}" rel="stylesheet"> 
-    </head>
-</html>
