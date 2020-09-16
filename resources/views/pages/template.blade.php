@@ -18,5 +18,12 @@
 
 <!-- bodyのHTML（blade） -->
 @section('content')
+
+<!-- /////// -->
+<p>これはテンプレートファイルです</p>
+
+
+<!-- JavaScriptのインポート -->
+<script src="{{ mix('js/test-firestore.js') }}"></script>
 @endsection
 
