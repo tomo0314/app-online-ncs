@@ -1,7 +1,11 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/layout_white.css": "/css/layout_white.css",
+    "/css/layout_blue.css": "/css/layout_blue.css",
+    "/css/login.css": "/css/login.css",
+    "/css/signup.css": "/css/signup.css",
     "/css/work_top.css": "/css/work_top.css",
     "/css/work_detail.css": "/css/work_detail.css",
-    "/css/layout_blue.css": "/css/layout_blue.css"
+    "/css/work_takeScreen.css": "/css/work_takeScreen.css",
+    "/css/profile_workReport.css": "/css/profile_workReport.css"
 }

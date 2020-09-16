@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('pages/sample');
 });
 
+Route::get('/login', function () {
+    return view('pages/login');
+});
+
+Route::get('/signup', function () {
+    return view('pages/signup');
+});
+
 Route::get('/works', function () {
     return view('pages/work_top');
 });
@@ -23,4 +31,13 @@ Route::get('/works/typeA', function () {
     return view('pages/work_detail');
 });
 
+Route::get('/takeScreen', function () {
+    return view('pages/work_takeScreen');
+});
+
+Route::get('/about', function () {
+    return view('pages/profile_workReport');
+});
+
 Route::get("/test", "FireTestController@show");
+
