@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('pages/sample');
 });
 
-Route::get('/', function () {
+Route::get('/template', function () {
     return view('pages/template');
 });
 
