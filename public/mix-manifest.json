@@ -7,5 +7,7 @@
     "/css/work_top.css": "/css/work_top.css",
     "/css/work_detail.css": "/css/work_detail.css",
     "/css/work_takeScreen.css": "/css/work_takeScreen.css",
-    "/css/profile_workReport.css": "/css/profile_workReport.css"
+    "/css/profile_workReport.css": "/css/profile_workReport.css",
+    "/js/index.js": "/js/index.js",
+    "/js/test-firestore.js": "/js/test-firestore.js"
 }
